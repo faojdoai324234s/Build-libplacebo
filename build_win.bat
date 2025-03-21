@@ -12,7 +12,7 @@ rmdir /s /q libplacebo
 
 xcopy /y /v /s /e src\include include
 
-dir include
+dir include\libplacebo
 
 exit /b
 
