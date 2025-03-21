@@ -26,9 +26,8 @@ jobs:
         working-directory: ${{ github.workspace }}/libplacebo
         run: |
           mkdir build
-          DIR=./build
-          meson $DIR
-          meson configure $DIR
+          meson setup ${{ github.workspace }}/libplacebo/build
+          meson configure ${{ github.workspace }}/libplacebo/build
         
       - name: Upload artifact
         uses: actions/upload-artifact@v4
