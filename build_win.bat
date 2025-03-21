@@ -4,7 +4,7 @@ setlocal EnableDelayedExpansion
 REM Download latest libplacebo
 git clone --recursive https://github.com/haasn/libplacebo
 
-mkdir libplacebo\include
+mkdir include
 
 xcopy /y /v /s /e libplacebo 
 
