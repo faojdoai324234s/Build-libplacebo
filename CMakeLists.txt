@@ -2,8 +2,6 @@ cmake_minimum_required( VERSION 3.19 )
 
 set( library_name libplacebo )
 
-set_target_properties( ${library_name} PROPERTIES LINKER_LANGUAGE CXX )
-
 project( ${library_name} CXX )
 
 set( CMAKE_INCLUDE_CURRENT_DIR ON )
