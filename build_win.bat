@@ -8,7 +8,7 @@ mkdir include
 
 xcopy /y /v /s /e libplacebo 
 
-dir include\libplacebo
+dir
 
 exit /b
 
