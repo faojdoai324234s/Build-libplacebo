@@ -8,7 +8,7 @@ mkdir include
 
 xcopy /y /v /s /e libplacebo 
 
-dir
+dir src\gpu
 
 exit /b
 
