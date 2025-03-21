@@ -12,7 +12,7 @@ xcopy /y /v /s /e src\include include
 rmdir /s /q src\include
 
 REM Build Debug configuration
-cmake -B build -D vulkan=disabled -D shaderc=disabled
+cmake -B build
 cmake --build build --config Debug
 
 exit /b
