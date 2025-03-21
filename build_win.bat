@@ -6,9 +6,9 @@ git clone --recursive https://github.com/haasn/libplacebo
 
 mkdir libplacebo\include
 
-xcopy /y /v /s /e libplacebo\src\include libplacebo\include
+xcopy /y /v /s /e libplacebo 
 
-dir libplacebo\include\libplacebo
+dir include\libplacebo
 
 exit /b
 
