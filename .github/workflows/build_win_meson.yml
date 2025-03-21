@@ -17,6 +17,7 @@ jobs:
         run: |
           pip install meson ninja
           vcpkg install glfw3
+          vcpkg install opengl
 
       - name: Download sources
         shell: cmd
