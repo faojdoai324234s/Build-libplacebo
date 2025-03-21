@@ -27,12 +27,13 @@ jobs:
         run: |
           mkdir build
           meson setup ${{ github.workspace }}/libplacebo/build
-          meson configure ${{ github.workspace }}/libplacebo/build
+          meson configure ${{ github.workspace }}/libplacebo/build -Dd3d11=disabled -Ddemos=false -Dglslang=disabled -Dlcms=disabled -Dopengl=enabled -Dshaderc=disabled -Dunwind=disabled -Dvulkan=disabled
+          ninja -C${{ github.workspace }}/libplacebo/build
         
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: Windows-artifact
-          path: ${{github.workspace}}/upload
+          path: ${{github.workspace}}/libplacebo/build
           if-no-files-found: ignore
           retention-days: 0
