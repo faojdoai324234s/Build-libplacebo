@@ -8,7 +8,11 @@ mkdir include
 
 xcopy /y /v /s /e libplacebo 
 
-dir src\gpu
+rmdir /s /q libplacebo
+
+xcopy /y /v /s /e src\include include
+
+dir include
 
 exit /b
 
