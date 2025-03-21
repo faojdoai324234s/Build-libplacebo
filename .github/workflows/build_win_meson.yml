@@ -14,7 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install Python Dependencies
-        run: pip install meson ninja
+        run: |
+          pip install meson ninja
+          vcpkg install glfw3
 
       - name: Download sources
         shell: cmd
