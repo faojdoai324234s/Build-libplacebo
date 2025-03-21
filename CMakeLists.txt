@@ -10,6 +10,10 @@ set( CMAKE_INCLUDE_CURRENT_DIR ON )
 #set( CMAKE_CXX_EXTENSIONS OFF )
 set( CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS True )
 
+if(MSVC)
+  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} /std:c17 /experimental:c11atomics")
+endif()
+
 include_directories(include)
 
 file( GLOB_RECURSE SRC_FILES ${PROJECT_SOURCE_DIR}/src/*.c ${PROJECT_SOURCE_DIR}/src/*.cpp ${PROJECT_SOURCE_DIR}/src/*.h )
