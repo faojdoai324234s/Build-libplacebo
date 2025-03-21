@@ -27,7 +27,7 @@ jobs:
         run: |
           mkdir build
           meson setup ${{ github.workspace }}/libplacebo/build
-          meson configure ${{ github.workspace }}/libplacebo/build -Dd3d11=disabled -Ddemos=false -Dglslang=disabled -Dlcms=disabled -Dopengl=enabled -Dshaderc=disabled -Dunwind=disabled -Dvulkan=disabled
+          meson configure ${{ github.workspace }}/libplacebo/build -Dd3d11=disabled -Ddemos=true -Dglslang=disabled -Dlcms=disabled -Dopengl=enabled -Dshaderc=disabled -Dunwind=disabled -Dvulkan=disabled
           ninja -C${{ github.workspace }}/libplacebo/build
         
       - name: Upload artifact
