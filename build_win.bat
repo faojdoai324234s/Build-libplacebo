@@ -9,6 +9,8 @@ mkdir include
 xcopy /y /v /s /e libplacebo 
 rmdir /s /q libplacebo
 xcopy /y /v /s /e src\include include
+echo "Listing mod..."
+dir mod
 copy /y /v mod/config_internal.h src
 echo "Listing src..."
 dir src
