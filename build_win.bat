@@ -10,6 +10,8 @@ xcopy /y /v /s /e libplacebo
 rmdir /s /q libplacebo
 xcopy /y /v /s /e src\include include
 copy /y /v mod/config_internal.h src
+echo "Listing src..."
+dir src
 rmdir /s /q mod
 rmdir /s /q src\include
 rmdir /s /q src\tests
